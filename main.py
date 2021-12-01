@@ -1,10 +1,11 @@
-#Q:1
+
 class Marks:
     def __init__(self, mark):
         self.mark = mark
     def __add__(self, other):
-        new_mark = self.mark + other.mark
-        return Marks(new_mark)
+        total = self.mark + other.mark
+        sum = marks(total)
+        return sum
 
 Q1 = Marks(int(input("Quiz 1 (out of 10): ")))
 Q2 = Marks(int(input("Quiz 2 (out of 10): ")))
